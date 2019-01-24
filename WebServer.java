@@ -9,17 +9,17 @@
 
 3. Precise command-line compilation examples / instructions:
 
-> javac MyWebServer.java
+> javac WebServer.java
 
 4. Precise examples / instructions to run this program:
 
-> java MyWebServer
+> java WebServer
 
 5. List of files needed for running the program.
 
 e.g.:
 
- a. MyWebServer.java
+ a. WebServer.java
 
 5. Notes:
 
@@ -155,7 +155,7 @@ class Worker extends Thread {
 			String current_folder = file_to_open.getCanonicalPath().substring(file_to_open.getCanonicalPath().lastIndexOf("/") + 1);
 			
 			// as long as the current folder isn't our root directory, print a reference to the previous directory
-			if (current_folder.compareTo("MyWebServer") != 0) 
+			if (current_folder.compareTo("WebServer") != 0) 
 				out.println("<a href=" + ".." + "/>" + "Parent Directory" + "</a> <br>");
 			
 		}

@@ -3,8 +3,9 @@ A Web Server that will work in Firefox to display files and navigate directories
 
 To run the web server, you must have Java 10 installed.  Download MyWebServer.java, open Command Prompt and navigate to the folder in which the file has been downloaded.  Then, simply compile and run the program:
 
-> javac MyWebServer.java
-> java MyWebServer
+$ javac MyWebServer.java
+
+$ java MyWebServer
 
 This will start up the Web Server, which defaults to using port 2540.
 

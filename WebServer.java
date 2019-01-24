@@ -262,7 +262,7 @@ class Worker extends Thread {
 }
 
 
-public class MyWebServer {
+public class WebServer {
   public static boolean control = true;
 
 	public static void main (String args[]) throws IOException {

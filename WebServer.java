@@ -42,7 +42,6 @@ class Worker extends Thread {
 	//attempt to open and read the current_request file and parse the filename the client is requesting
 	public void readFile(PrintStream out) throws FileNotFoundException {
 		
-		//out.println("hi Kaz");
 		File f = new File("./current_request.txt"); 
 		FileReader fr = new FileReader(f);
 		BufferedReader br = new BufferedReader(fr);
@@ -119,7 +118,6 @@ class Worker extends Thread {
 		int sum = addnums(num1, num2);
 		printCGI(input_name, num1, num2, sum, out);
 		
-		//System.out.println("name is " + input_name + " and num1 is " + num1 + " and num2 is " + num2);
 	}
 	
 	public void printCGI(String name, String num1, String num2, int sum, PrintStream out) throws FileNotFoundException {
@@ -271,7 +269,7 @@ public class WebServer {
 		int port = 2540;
 		
 		Socket sock;	
-		ServerSocket servsock = new ServerSocket(port, q_len);  // creates a new ServerSocket called "servsock"
+		ServerSocket servsock = new ServerSocket(port, q_len);  // creates a new ServerSocket
 		
 		System.out.println("Kaz Schmanski's WebServer starting up, listening at port " + port);
 		while (control) {
